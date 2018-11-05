@@ -4,9 +4,7 @@ function BoardMember(name, homeState, training){
   this.training = training
 
 
-  this.approve = function(){
-    return 'You can do that!'
-  }
+  this
   this.doCharity = function(){
     return "I like to help people."
   }
@@ -22,4 +20,7 @@ function BoardMember(name, homeState, training){
 
 BoardMember.prototype.veto = function(){
   return 'No, I must disagree'
+}
+BoardMember.prototype.approve = function(){
+  return 'You can do that!'
 }
